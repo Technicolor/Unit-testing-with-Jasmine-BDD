@@ -1,0 +1,25 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Unit-testing with Jasmine BDD</title>
+	<link rel="stylesheet" href="jasmine.css">
+	<style type="text/css">
+		.myclassa {
+			color: #00f;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="my-header" class="myclassa myclassb">Unit-testing with Jasmine BDD</h1>
+	
+	<script src="jasmine.js"></script>
+	<script src="jasmine-html.js"></script>
+	<script src="my-cool-library.js"></script>
+	<script src="my-tests.js"></script>
+	<script>
+		jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+		jasmine.getEnv().execute();
+	</script>
+</body>
+</html>
